@@ -7,17 +7,14 @@
   ></script>
 
   <model-viewer
-    bounds="tight"
-    enable-pan
-    src="untitled (2).gltf"
+    src="https://cdn.glitch.global/f3a5f0cb-ee51-4349-9176-d725a08723ac/untitled%20(2).gltf?v=1659553166828"
     ar
-    ar-modes="scene-viewer webxr quick-look"
+    ar-scale="fixed"
     camera-controls
-    environment-image="neutral"
-    poster="poster.webp"
-    shadow-intensity="1.58"
-    exposure="0.44"
-    shadow-softness="1"
+    alt="A 3D model of an astronaut"
+    skybox-image="../../shared-assets/environments/aircraft_workshop_01_1k.hdr"
+    ios-src="https://cdn.glitch.global/f3a5f0cb-ee51-4349-9176-d725a08723ac/untitled%20(2).gltf?v=1659553166828"
+    xr-environment
   >
     <div class="progress-bar hide" slot="progress-bar">
       <div class="update-bar"></div>
@@ -28,3 +25,8 @@
     </div>
   </model-viewer>
 </html>
+
+  <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+      👋 Activate AR
+  </button>
+</model-viewer>
